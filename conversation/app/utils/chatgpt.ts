@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_KEY = process.env.NEXT_PUBLIC_OPENAI_API_KEY;
+const API_KEY = process.env.OPENAI_API_KEY;
 const API_URL = 'https://api.openai.com/v1/chat/completions';
 
 export async function getChatGPTResponse(message: string): Promise<string> {
